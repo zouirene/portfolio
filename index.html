@@ -3,8 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <title>Irene Zou</title>
+    <link rel="stylesheet" href="public/styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
 </head>
 <body>
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="logo">
+            <svg width="40px" height="53px" viewBox="0 0 40 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Group 10</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Desktop-HD" transform="translate(-94.000000, -46.000000)" fill="#000000">
+                        <g id="Group-10" transform="translate(94.000000, 46.000000)">
+                            <polygon id="Rectangle-3" points="25.7142857 0 39.047619 0 13.3333333 52.0363636 0 52.0363636"></polygon>
+                            <path d="M22,33 L39.6279313,33 C39.6279313,33 33.1496227,34.1285375 28.2212246,38.6070624 C23.2928266,43.0855874 22,51.9829217 22,51.9829217 L22,33 Z" id="Path-2" transform="translate(30.813966, 42.491461) scale(-1, -1) translate(-30.813966, -42.491461) "></path>
+                            <path d="M0,0 L16.1309922,0 C16.1309922,0 10.1883524,0.704393159 5.47046589,5.31808098 C0.752579401,9.9317688 0,17.6813526 0,17.6813526 L0,0 Z" id="Path-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <ul class="nav-bar__top">
+            <li class="nav-bar-item home">HOME</li>
+            <li class="nav-bar-item">ABOUT</li>
+            <li class="nav-bar-item">WORK</li>
+            <li class="nav-bar-item">CONTACT</li>
+        </ul>
+        <div class="side-nav toggle-nav">
+            <div class="hamburger">
+                <div class="line1-cell">
+                    <span id="current-view" class="toggle-current-view">ABOUT ME</span>
+                    <div class="line1" id="growth-line"></div>
+                </div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+    <div class="keyline1"></div>
+    <div class="keyline2-cell">
+        <div class="keyline2">
+        <p class="keyline-text">ABOUT ME ></p>
 
+        </div>
+    </div>
+
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="slider">
+            <div class="main-carousel">
+                <div class="carousel-cell cell__1">this is a slider cell</div>
+                <div class="carousel-cell cell__2">this is a slider cell</div>
+                <div class="carousel-cell cell__3">this is a slider cell</div>
+            </div>
+        </div>
+        <div class="hero-text">
+            <h2>Hi, it's me</h2>
+            <h1>Irene Zou</h1>
+            <p>designer + developer + photographer</p>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT ME SECTION -->
+    <section class="about-section">
+        <div class="about-title">
+            <h2>I am</h2>
+            <div class="keyline3"></div>
+
+        </div>
+        <div class="about-text">
+            <p>A solution oriented b-school grad turned <span class="title">product designer</span> and <span class="title">front-end developer</span>.</p>
+            <p>Pushing pixels and boundaries at the intersection of <span class="background1">simplicity</span>, <span class="background2">form</span>, and <span class="background3">function</span>.</p>
+            <p>Kept wide awake by caffeine, music, open dialogues, and meaningful ideas that delight and endure.</p>
+        </div>
+        <div class="about-photo">
+            <img src="assets/aboutMe.png" alt="A portrait of Irene Zou">
+        </div>
+    </section>
+
+
+    <!-- WORK SECTION -->
+    <section class="work-section">
+        <!-- project 1: whats in the air -->
+        <div class="work-cell p1">
+            <div class="work-image">
+                <img src="assets/p1.png" alt="A computer demonstrating project 1: what's in the air?">
+            </div>
+<!--             <div class="work-content">
+                <p>An air quality monitor that tells you what you're actually breathing today.</p>
+                <button class="view-live-btn"><a href="#" target="_blank">VIEW LIVE</a></button>
+            </div> -->
+            <div class="work-header">
+                <h3>01</h3>
+                <!-- <p>jQuery&nbsp;&nbsp;&nbsp;&nbsp;API&nbsp;&nbsp;&nbsp;&nbsp;Javascript&nbsp;&nbsp;&nbsp;&nbsp;Sass</p> -->
+                <ul>
+                    <li>jQuery</li>
+                    <li>API</li>
+                    <li>Javascript</li>
+                    <li>Sass</li>
+                </ul>
+                <h1>what's in the air?</h1>
+            </div>
+            <div class="keyline__work"></div>
+
+        </div>
+
+        <!-- project 2: mindpalace -->
+        <div class="work-cell p2">
+            <div class="work-header">
+                <h3>02</h3>
+                <!-- <p>React   Firebase   Javascript   Sass</p> -->
+                <ul>
+                    <li>React</li>
+                    <li>Firebase</li>
+                    <li>Javascript</li>
+                    <li>Sass</li>
+                </ul>
+                <h1>mindpalace</h1>
+
+            </div>
+<!--             <div class="work-content hide">
+                <p>Important things you're trying to remember? Digitalize your flashcards, store them in your own mind palace.</p>
+                <button class="view-live-btn"><a href="#" target="_blank">VIEW LIVE</a></button>
+            </div> -->
+            <div class="work-image">
+                <img src="assets/p2.png" alt="A computer demonstrating project 2: mindpalace">
+            </div>
+            <div class="keyline__work"></div>
+        </div>
+
+        <!-- project 3: makeup thing??? -->
+        <div class="work-cell p3">
+            <div class="work-image">
+                <img src="assets/p3.png" alt="Screenshots from project 3: beautylog">
+            </div>
+<!--             <div class="work-content hide">
+                <p>Client API project, done in a mock agency environment. See client brief <a href="https://drive.google.com/drive/folders/0B9mFTR7VN-mEZ2czMHgyWm9Ramc">here</a>.</p>
+                <button class="view-live-btn"><a href="#" target="_blank">VIEW LIVE</a></button>
+            </div> -->
+            <div class="work-header">
+                <h3>03</h3>
+                <!-- <p>jQuery   API   Firebase   Javascript   Sass</p> -->
+                <ul>
+                    <li>jQuery</li>
+                    <li>API</li>
+                    <li>Firebase</li>
+                    <li>Javascript</li>
+                    <li>Sass</li>
+                </ul>
+                <h1>the beautylog</h1>
+            </div>
+            <div class="keyline__work"></div>
+        </div>
+
+        <!-- project 4: tribe -->
+        <div class="work-cell p4">
+            <div class="work-header">
+                <h3>04</h3>
+                <!-- <p>Product design   UX research   Interactive prototype</p> -->
+                <ul>
+                    <li>UX/UI design</li>
+                    <li>Design thinking</li>
+                    <li>Invision Prototype</li>
+                </ul>
+                <h1>tribe: a case study</h1>
+
+            </div>
+<!--             <div class="work-content hide">
+                <p>A new way to see the world - begin somewhere, belong anywhere</p>
+                <button class="view-live-btn"><a href="#" target="_blank">VIEW LIVE</a></button>
+            </div> -->
+            <div class="work-image">
+                <img src="assets/p4.png" alt="Screenshots from project 4: tribe">
+            </div>
+            <div class="keyline__work"></div>
+        </div>
+
+        <!-- project 5: photography -->
+        <div class="work-cell p5">
+            <div class="work-image">
+                <img src="assets/p5.png" alt="Screenshots from my photography website">
+            </div>
+<!--             <div class="work-content hide">
+                <p>I picked up my first camera when I was 13, and I haven't stopped taking photos ever since. Catch me behind the camera when I'm not coding or designing.</p>
+                <button class="view-live-btn"><a href="#" target="_blank">VIEW LIVE</a></button>
+            </div> -->
+            <div class="work-header">
+                <h3>05</h3>
+                <!-- <p>Photography Creative direction   Branding   Adobe CC</p> -->
+                <ul>
+                    <li>Creative direction</li>
+                    <li>Branding</li>
+                    <li>Adobe CC</li>
+                </ul>
+                <h1>Irene Zou Photography</h1>
+            </div>
+            <div class="keyline__work"></div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT ME SECTION -->
+    <section class="contact-me-section">
+        <h5>Say hello</h5>
+        <div class="social-media-section">
+            <a href="#">Github</a>
+            <a href="#">Linkedin</a>
+            <a href="#">Medium</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="email">
+        <!-- get an email from my domain mame -->
+            <h6>irenetczou@gmail.com</h6>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Designed and coded in Toronto, Canada with love</p>
+        <p>By Irene Zou. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src="public/scripts/script.js"></script>
 </body>
 </html>

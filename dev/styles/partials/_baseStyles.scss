@@ -1,0 +1,14 @@
+
+body {
+    // background-color: lightsalmon;
+    font-family: $bodyFont;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $headingFont;
+        font-weight: normal;
+    }
+}
+
+.hide {
+    display: none;
+}
+
