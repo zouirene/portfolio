@@ -5,20 +5,62 @@ $(function(){
       cellAlign: 'left',
       contain: true,
       prevNextButtons: false,
-      autoPlay: 2500,
+      autoPlay: 4500,
       wrapAround: true,
       draggable: false
     });
 
-    $('h5.home').on('click', function(e){
+    let about = $('.about-section').offset().top;
+    let work = $('.p1').offset().top;
+    let contact = $('.contact-me-section').offset().top;
+
+    $('li.home').on('click', function(e){
         e.preventDefault();
         console.log('hello');
-        $('html,body').animate({scrollTop: 2000},'slow');
+        $('html,body').animate({scrollTop: 0},'slow');
     })
 
+    $('li.about').on('click', function(e){
+        e.preventDefault();
+        console.log('hello');
+        $('html,body').animate({scrollTop: about},'slow');
+        console.log(about)
+    })
+
+    $('li.work').on('click', function(e){
+        e.preventDefault();
+        console.log(work);
+        $('html,body').animate({scrollTop: work},'slow');
+    })
+
+    $('li.contact').on('click', function(e){
+        e.preventDefault();
+        console.log('hello');
+        $('html,body').animate({scrollTop: contact},'slow');
+    })
+
+    $('.side-nav').on('click', function(e){
+        e.preventDefault();
+        console.log('burgerr');
+        $('.nav-bar__side').toggleClass('toggle-nav__side');
+        $('#growth-line').toggleClass('open');
+        $('#current-view').toggleClass('toggle-current-view')
+    })
+
+    // how do i turn this off after i close the menu??
+
     $(window).scroll(()=>{
+
+        if ($('#nav-bar__side').hasClass('toggle-nav__side')) {
+            // console.log('yea');
+            $('#current-view').removeClass('toggle-current-view');
+            $('.nav-bar__side').toggleClass('toggle-nav__side');
+            $('#growth-line').toggleClass('open');
+        }
+
         let scroll = $(window).scrollTop();
         let firstFold = $(window).height();
+        let viewWidth = $(window).width();
         let halfFold = 0.5*firstFold;
         let secondFold = 2*firstFold;
         let thirdFold = 3*firstFold;
@@ -49,9 +91,9 @@ $(function(){
         }
 
 
-        if(scroll > (secondFold - 120) && scroll < (thirdFold - 50)) {
+        if(scroll > secondFold && scroll < 2500) {
             $('#current-view').text('MY WORK')
-        } else if (scroll > (thirdFold - 80)) {
+        } else if (scroll > 2500) {
             $('#current-view').text('SAY HELLO')
         } else {
             $('#current-view').text('ABOUT ME')
@@ -60,7 +102,7 @@ $(function(){
 
         // keyline animation in background
         if (scroll < 800) {
-            $('.keyline3').css('width', (800*scrollPercent))
+            $('.keyline3').css('width', ((0.35*viewWidth)*scrollPercent))
         }
 
         if (scroll < 773) {
